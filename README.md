@@ -93,24 +93,11 @@
 - **Phone:** +94 769291462  
 - **Location:** Bandaragama, Sri Lanka
 
-### Dev Quote
+## 💡 Dev Quote
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula" alt="Random Dev Quote">
 </p>
 
-### Top Contributed Repositories
-<p align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=Viraj-Lakshitha12&limit=5&theme=dracula&combine_all_yearly_contributions=true" alt="Top Contributed Repo">
-</p>
-
-### Random Dev Meme
-<p align="center">
-  <img src="https://via.placeholder.com/400x400?text=Random+Dev+Meme+Loading..." alt="Random Dev Meme" style="height: 400px;">
-</p>
 
 ---
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=Viraj-Lakshitha12&icon=0&color=0" alt="Visitor Count">
-</p>
 
-<!-- Created with GPRM ( https://gprm.itsvg.in ) -->
