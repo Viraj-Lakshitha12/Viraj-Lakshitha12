@@ -85,8 +85,8 @@
 </details>
 
 ## Education
-- **BSc (Hons) in Software Engineering (Reading)** - Cardiff Metropolitan University (2022 - 2024)  
-- **Graduate Diploma in Software Engineering (GDSE)** - Institute of Software Engineering (IJSE) (2025 - 2026)
+- **BSc (Hons) in Software Engineering (Reading)** - University of Bolton (2025 - 2026)  
+- **Graduate Diploma in Software Engineering (GDSE)** - Institute of Software Engineering (IJSE) (2022 - 2024)
 
 ## Contact
 - **Email:** viraj.lakshitha.22222@gmail.com  
