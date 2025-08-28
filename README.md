@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="https://via.placeholder.com/1200x300?text=Header+Image" alt="Header Image" width="100%">
+  <img width="2816" height="1536" alt="Gemini_Generated_Image_quckkbquckkbquck" src="https://github.com/user-attachments/assets/c7ff778e-455d-4a6b-9be9-2ecc8d88a784" />
 </p>
 
 # Viraj Lakshitha
+
 
 <p align="center">
   Welcome! I’m a Full Stack Software Engineer working at INTELLEON.
