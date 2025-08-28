@@ -1,25 +1,25 @@
 <p align="center">
-  <img src="https://i.pinimg.com/originals/4e/5f/3d/4e5f3d7b3e4e5f6g7h8i9j0k.jpg" alt="Magical Fantasy Banner" width="100%">
+  <img src="https://via.placeholder.com/1200x300?text=Header+Image" alt="Header Image" width="100%">
 </p>
 
-# ✨ Enchanted Realm: Viraj Lakshitha 🧙‍♂️
+# Viraj Lakshitha
 
 <p align="center">
-  <img src="https://media.tenor.com/0l7fWzCBfBAAAAAd/wizard-wave.gif" width="30"> Greetings, traveler! I’m a Full Stack Sorcerer casting spells at INTELLEON.
+  Welcome! I’m a Full Stack Software Engineer working at INTELLEON.
 </p>
 
 <p align="center">
-  "Magic is just science we don’t understand yet." - Arthur C. Clarke
+  "Any sufficiently advanced technology is indistinguishable from magic." - Arthur C. Clarke
 </p>
 
-## 🌟 Mystic About Me
-🔭 Conjuring as a Full Stack Software Engineer at INTELLEON<br>
-👯 Seeking quests in full stack development realms<br>
-🤝 Summoning aid for advanced cloud and containerization arcane arts<br>
-🌱 Mastering spells in Docker, Kubernetes, and AWS<br>
-💬 Whisper to me about Java, Spring Boot, Node.js, Express.js, React, HTML, JavaScript, TypeScript<br>
+## About Me
+🔭 Currently working as a Full Stack Software Engineer at INTELLEON<br>
+👯 Looking for opportunities in full stack development<br>
+🤝 Seeking collaboration on advanced cloud and containerization technologies<br>
+🌱 Currently learning Docker, Kubernetes, and AWS<br>
+💬 Feel free to ask me about Java, Spring Boot, Node.js, Express.js, React, HTML, JavaScript, TypeScript<br>
 
-## 🔮 Crystal Ball Socials
+## Socials
 <p align="center">
   <a href="https://linkedin.com/in/viraj-lakshitha01">
     <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -29,7 +29,7 @@
   </a>
 </p>
 
-## 🪄 Arcane Tech Arsenal
+## Tech Stack
 <p align="center">
   <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white" alt="Java"> 
   <img src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white" alt="Spring"> 
@@ -55,21 +55,16 @@
   <img src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
 </p>
 
-## 📜 Scroll of GitHub Lore
+## GitHub Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Viraj-Lakshitha12&theme=dracula&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"><br>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Viraj-Lakshitha12&theme=dracula&hide_border=true" alt="Streak Stats"><br>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Viraj-Lakshitha12&theme=dracula&hide_border=true&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
 </p>
 
-## 🏆 Trophies of Valor
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Viraj-Lakshitha12&theme=dracula&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies">
-</p>
-
-## 🧪 Potion Projects
+## Projects
 <details>
-  <summary>Click to reveal enchanted projects ✨</summary>
+  <summary>Click to view projects</summary>
   
 - **[E-Commerce Backend API (2024)](https://github.com/Viraj-Lakshitha12/E-Commerce-API)**  
   Designed and implemented a scalable microservices-based backend for an e-commerce platform. Containerized with Docker and orchestrated via Docker Compose for local development and deployment.
@@ -88,40 +83,28 @@
   
 </details>
 
-## 🎓 Tomes of Knowledge
+## Education
 - **BSc (Hons) in Software Engineering (Reading)** - Cardiff Metropolitan University (2022 - 2024)  
 - **Graduate Diploma in Software Engineering (GDSE)** - Institute of Software Engineering (IJSE) (2025 - 2026)
 
-## 🏅 Enchanted Certifications
-- Kubernetes For Absolute Beginners - KodeKloud  
-- Docker For Absolute Beginners - KodeKloud  
-- AWS Basics - KodeKloud  
-- Linux For Absolute Beginners - KodeKloud
-
-## 📿 Summon Me
+## Contact
 - **Email:** viraj.lakshitha.22222@gmail.com  
 - **Phone:** +94 769291462  
 - **Location:** Bandaragama, Sri Lanka
 
-## 🐍 Serpent Contribution Ritual
-<p align="center">
-  <!-- Replace with the correct path once the action is set up -->
-  <img src="https://raw.githubusercontent.com/Viraj-Lakshitha12/Viraj-Lakshitha12/output/github-contribution-grid-snake.svg" alt="Snake Animation">
-</p>
-
-### ✍️ Arcane Dev Prophecy
+### Dev Quote
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula" alt="Random Dev Quote">
 </p>
 
-### 🔝 Pinnacle Contributed Realms
+### Top Contributed Repositories
 <p align="center">
   <img src="https://github-contributor-stats.vercel.app/api?username=Viraj-Lakshitha12&limit=5&theme=dracula&combine_all_yearly_contributions=true" alt="Top Contributed Repo">
 </p>
 
-### 😂 Mystic Dev Jest
+### Random Dev Meme
 <p align="center">
-  <img src="https://randommeme-five.vercel.app/" style="height: 400px;" alt="Random Dev Meme">
+  <img src="https://via.placeholder.com/400x400?text=Random+Dev+Meme+Loading..." alt="Random Dev Meme" style="height: 400px;">
 </p>
 
 ---
@@ -129,4 +112,4 @@
   <img src="https://visitcount.itsvg.in/api?id=Viraj-Lakshitha12&icon=0&color=0" alt="Visitor Count">
 </p>
 
-<!-- Proudly enchanted with GPRM ( https://gprm.itsvg.in ) -->
+<!-- Created with GPRM ( https://gprm.itsvg.in ) -->
