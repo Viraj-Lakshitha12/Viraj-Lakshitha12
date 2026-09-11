@@ -109,9 +109,6 @@ Core stack: <code>Java</code> · <code>Spring Boot</code> · <code>Node.js</code
 
 ## GitHub Analytics
 
-> Public `github-readme-stats` / trophy / activity-graph Vercel apps are currently **paused (503/402)**.  
-> Streak + contribution snake + 3D graph still work. Stats cards will return when those services are back.
-
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=Viraj-Lakshitha12&theme=radical&hide_border=true" alt="GitHub Streak" />
 </div>
