@@ -1,0 +1,95 @@
+<svg viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Education path 2020–2026">
+  <defs>
+    <style>
+      @keyframes pulse { 0%,100% { opacity:.3; } 50% { opacity:.85; } }
+      @keyframes grow { 0% { stroke-dashoffset: 700; } 100% { stroke-dashoffset: 0; } }
+      @keyframes fadeUp { 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
+      @keyframes scan { 0% { transform: translateY(-8px); opacity:0; } 15% { opacity:.25; } 85% { opacity:.08; } 100% { transform: translateY(330px); opacity:0; } }
+      .line { stroke-dasharray: 700; animation: grow 2.4s ease-out forwards; }
+      .n1 { animation: pulse 2.6s ease-in-out infinite; }
+      .n2 { animation: pulse 2.6s ease-in-out infinite .4s; }
+      .n3 { animation: pulse 2.6s ease-in-out infinite .8s; }
+      .c1 { animation: fadeUp .7s ease-out .2s both; }
+      .c2 { animation: fadeUp .7s ease-out .45s both; }
+      .c3 { animation: fadeUp .7s ease-out .7s both; }
+      .scan { animation: scan 8s linear infinite; }
+    </style>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#0a1f2c"/>
+      <stop offset="55%" stop-color="#061018"/>
+      <stop offset="100%" stop-color="#03070c"/>
+    </radialGradient>
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="50%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a1220"/>
+    </linearGradient>
+    <pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#5eead4" stroke-width=".2" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="960" height="320" rx="18" fill="url(#g)" opacity=".9"/>
+  <rect width="960" height="320" rx="18" fill="none" stroke="#5eead4" stroke-opacity=".14"/>
+
+  <rect class="scan" x="0" y="0" width="960" height="1.5" fill="#5eead4" opacity=".25"/>
+
+  <!-- header -->
+  <text x="480" y="36" text-anchor="middle"
+        font-family="ui-monospace, Menlo, Consolas, monospace"
+        font-size="11" fill="#5eead4" letter-spacing="4">EDUCATION PATH · 2020 → 2026</text>
+  <text x="480" y="58" text-anchor="middle"
+        font-family="ui-monospace, Menlo, Consolas, monospace"
+        font-size="10" fill="#64748b" letter-spacing="1.5">Maths stream · Software engineering · Computing top-up</text>
+
+  <!-- timeline -->
+  <line x1="120" y1="118" x2="840" y2="118" stroke="#1e293b" stroke-width="3"/>
+  <line class="line" x1="120" y1="118" x2="840" y2="118" stroke="url(#track)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- STEP 1: A/L -->
+  <g class="c1">
+    <circle class="n1" cx="200" cy="118" r="16" fill="#0e7490" opacity=".22"/>
+    <circle cx="200" cy="118" r="9" fill="#0e7490" stroke="#5eead4" stroke-width="2"/>
+    <text x="200" y="92" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#5eead4" letter-spacing="1">01</text>
+
+    <rect x="95" y="150" width="210" height="130" rx="12" fill="url(#card)" stroke="#5eead4" stroke-opacity=".2"/>
+    <text x="200" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f1f5f9" font-weight="700">G.C.E. Advanced Level</text>
+    <text x="200" y="200" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#5eead4">Maths Stream</text>
+    <text x="200" y="222" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Vidyarthna University</text>
+    <text x="200" y="238" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">College · Horana</text>
+    <text x="200" y="262" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#22d3ee">2020</text>
+  </g>
+
+  <!-- STEP 2: GDSE -->
+  <g class="c2">
+    <circle class="n2" cx="480" cy="118" r="16" fill="#5eead4" opacity=".18"/>
+    <circle cx="480" cy="118" r="9" fill="#134e4a" stroke="#5eead4" stroke-width="2"/>
+    <text x="480" y="92" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#5eead4" letter-spacing="1">02</text>
+
+    <rect x="375" y="150" width="210" height="130" rx="12" fill="url(#card)" stroke="#5eead4" stroke-opacity=".2"/>
+    <text x="480" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f1f5f9" font-weight="700">GDSE</text>
+    <text x="480" y="200" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#5eead4">Software Engineering</text>
+    <text x="480" y="222" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Institute of Software</text>
+    <text x="480" y="238" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Engineering · Panadura</text>
+    <text x="480" y="262" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#22d3ee">2022 — 2023</text>
+  </g>
+
+  <!-- STEP 3: BSc -->
+  <g class="c3">
+    <circle class="n3" cx="760" cy="118" r="16" fill="#22d3ee" opacity=".16"/>
+    <circle cx="760" cy="118" r="9" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
+    <text x="760" y="92" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#22d3ee" letter-spacing="1">03</text>
+
+    <rect x="655" y="150" width="210" height="130" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity=".25"/>
+    <text x="760" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f1f5f9" font-weight="700">BSc (Hons) Computing</text>
+    <text x="760" y="200" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#5eead4">Top-Up Degree</text>
+    <text x="760" y="222" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Wrexham University, UK</text>
+    <text x="760" y="238" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Londontec City Campus</text>
+    <text x="760" y="262" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#22d3ee">2026</text>
+  </g>
+</svg>
