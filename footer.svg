@@ -1,0 +1,138 @@
+<svg viewBox="0 0 960 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="build ship iterate — Viraj Lakshitha">
+  <defs>
+    <style>
+      @keyframes drift { from { transform: translate(0,0); } to { transform: translate(28px,28px); } }
+      @keyframes floatA { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      @keyframes floatB { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-11px); } }
+      @keyframes pulse { 0%,100% { opacity:.1; } 50% { opacity:.22; } }
+      @keyframes dash { to { stroke-dashoffset: -80; } }
+      @keyframes beam { 0%,100% { opacity:.35; } 50% { opacity:.8; } }
+      @keyframes scan { 0% { transform: translateY(-10px); opacity:0; } 12% { opacity:.3; } 88% { opacity:.1; } 100% { transform: translateY(230px); opacity:0; } }
+      .grid { animation: drift 24s linear infinite; }
+      .fa { animation: floatA 4.8s ease-in-out infinite; }
+      .fb { animation: floatB 5.6s ease-in-out infinite -1.2s; }
+      .fc { animation: floatA 6.2s ease-in-out infinite -2s; }
+      .pulse { animation: pulse 5s ease-in-out infinite; }
+      .dash { animation: dash 5s linear infinite; }
+      .beam { animation: beam 3s ease-in-out infinite; }
+      .scan { animation: scan 7s linear infinite; }
+    </style>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#0a1f2c"/>
+      <stop offset="55%" stop-color="#061018"/>
+      <stop offset="100%" stop-color="#03070c"/>
+    </radialGradient>
+    <linearGradient id="cubeT" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="cubeL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#155e75"/>
+    </linearGradient>
+    <linearGradient id="cubeR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#134e4a"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5eead4" stop-opacity=".6"/>
+      <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="vigB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="40%" stop-color="#03070c" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#03070c" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="vigT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#03070c" stop-opacity=".85"/>
+      <stop offset="40%" stop-color="#03070c" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#5eead4" stroke-width=".22" stroke-opacity=".12"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="220" fill="url(#bg)"/>
+  <g class="grid" opacity=".85">
+    <rect x="-32" y="-32" width="1024" height="284" fill="url(#g)"/>
+  </g>
+
+  <ellipse class="pulse" cx="200" cy="110" rx="120" ry="70" fill="#0e7490"/>
+  <ellipse class="pulse" cx="760" cy="100" rx="110" ry="65" fill="#5eead4" style="animation-delay:-2s"/>
+
+  <!-- circuit -->
+  <g fill="none" stroke="#5eead4" stroke-opacity=".3" stroke-width="1" stroke-dasharray="5 8" class="dash">
+    <path d="M0 160 H70 V120 H130"/>
+    <path d="M960 60 H890 V100 H830"/>
+    <path d="M0 190 H90"/>
+    <path d="M960 190 H870"/>
+  </g>
+  <g fill="#5eead4">
+    <circle cx="70" cy="160" r="2.2" opacity=".5"/>
+    <circle cx="130" cy="120" r="2.2" opacity=".5"/>
+    <circle cx="890" cy="60" r="2.2" opacity=".5"/>
+    <circle cx="830" cy="100" r="2.2" opacity=".5"/>
+  </g>
+
+  <!-- cubes -->
+  <g class="fa">
+    <polygon points="90,70 120,52 150,70 120,88" fill="url(#cubeT)" opacity=".75"/>
+    <polygon points="90,70 120,88 120,118 90,100" fill="url(#cubeL)" opacity=".8"/>
+    <polygon points="120,88 150,70 150,100 120,118" fill="url(#cubeR)" opacity=".82"/>
+  </g>
+  <g class="fb">
+    <polygon points="800,55 835,35 870,55 835,75" fill="url(#cubeT)" opacity=".72"/>
+    <polygon points="800,55 835,75 835,110 800,90" fill="url(#cubeL)" opacity=".78"/>
+    <polygon points="835,75 870,55 870,90 835,110" fill="url(#cubeR)" opacity=".8"/>
+  </g>
+  <g class="fc">
+    <polygon points="200,145 222,132 244,145 222,158" fill="url(#cubeT)" opacity=".55"/>
+    <polygon points="200,145 222,158 222,182 200,169" fill="url(#cubeL)" opacity=".6"/>
+    <polygon points="222,158 244,145 244,169 222,182" fill="url(#cubeR)" opacity=".62"/>
+  </g>
+  <g class="fa" style="animation-delay:-1s">
+    <polygon points="720,140 740,128 760,140 740,152" fill="url(#cubeT)" opacity=".48"/>
+    <polygon points="720,140 740,152 740,172 720,160" fill="url(#cubeL)" opacity=".52"/>
+    <polygon points="740,152 760,140 760,160 740,172" fill="url(#cubeR)" opacity=".54"/>
+  </g>
+
+  <!-- center beam -->
+  <rect x="180" y="108" width="600" height="1.4" fill="url(#line)" class="beam"/>
+
+  <!-- scan -->
+  <rect class="scan" x="0" y="0" width="960" height="1.6" fill="#5eead4" opacity=".3"/>
+
+  <rect width="960" height="220" fill="url(#vigB)"/>
+  <rect width="960" height="220" fill="url(#vigT)"/>
+
+  <!-- text -->
+  <text x="480" y="78" text-anchor="middle"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="11" fill="#5eead4" letter-spacing="5" opacity=".9">
+    FULL STACK · PRODUCTION · 2026
+  </text>
+
+  <text x="480" y="118" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="32" fill="#f1f5f9" font-weight="700" letter-spacing="-0.5">
+    build · ship · iterate
+  </text>
+
+  <text x="480" y="148" text-anchor="middle"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="12" fill="#94a3b8" letter-spacing="1.2">
+    Java · Spring · Node · React · PostgreSQL · Redis · Docker
+  </text>
+
+  <!-- chips -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10">
+    <rect x="280" y="170" width="70" height="22" rx="11" fill="#0e7490" opacity=".4" stroke="#5eead4" stroke-opacity=".35"/>
+    <text x="315" y="185" text-anchor="middle" fill="#99f6e4">APIs</text>
+    <rect x="360" y="170" width="80" height="22" rx="11" fill="#0e7490" opacity=".4" stroke="#5eead4" stroke-opacity=".35"/>
+    <text x="400" y="185" text-anchor="middle" fill="#99f6e4">Queries</text>
+    <rect x="450" y="170" width="70" height="22" rx="11" fill="#0e7490" opacity=".4" stroke="#5eead4" stroke-opacity=".35"/>
+    <text x="485" y="185" text-anchor="middle" fill="#99f6e4">Cloud</text>
+    <rect x="530" y="170" width="80" height="22" rx="11" fill="#0e7490" opacity=".4" stroke="#5eead4" stroke-opacity=".35"/>
+    <text x="570" y="185" text-anchor="middle" fill="#99f6e4">Ship it</text>
+  </g>
+</svg>
