@@ -32,58 +32,52 @@
 
 <div align="center">
 
-**Viraj Lakshitha** · Full Stack Software Engineer @ **INTELLEON** · 2+ years in production
-
-</div>
+Full-stack engineer on production web systems at **INTELLEON**.  
+Work covers **APIs**, **databases**, and **React** UIs — with focus on backend design and query performance.
 
 <br/>
 
-<p align="center">
-I design backend architecture, tune database queries, and ship React frontends that feel fast.<br/>
-Core stack: <code>Java</code> · <code>Spring Boot</code> · <code>Node.js</code> · <code>React</code> · <code>PostgreSQL</code>
-</p>
+<img src="https://img.shields.io/badge/Experience-2%2B_years_·_INTELLEON-0e7490?style=for-the-badge&labelColor=0d1117" />
+&nbsp;
+<img src="https://img.shields.io/badge/Learning-Docker_%7C_K8s_%7C_AWS-5eead4?style=for-the-badge&labelColor=0d1117" />
+&nbsp;
+<img src="https://img.shields.io/badge/Open_to-Cloud_%26_AI_work-22d3ee?style=for-the-badge&labelColor=0d1117" />
 
-<p align="center">
-  <img src="https://img.shields.io/badge/🔭_Building-Full--stack_@INTELLEON-0e7490?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/🌱_Learning-Docker_%7C_K8s_%7C_AWS-5eead4?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/🤖_Exploring-LLM_APIs_%7C_GraphQL_%7C_Kafka-22d3ee?style=for-the-badge&labelColor=0d1117" />
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/🤝_Open_to-Cloud--native_%26_AI_collab-a78bfa?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/💬_Ask_me-Java_%7C_Spring_%7C_Node_%7C_React_%7C_SQL-94a3b8?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/📍_Bandaragama-Sri_Lanka-0e7490?style=for-the-badge&labelColor=0d1117" />
-</p>
+<br/><br/>
 
-<p align="center">
-  <i>"Any sufficiently advanced technology is indistinguishable from magic."</i> — Arthur C. Clarke
-</p>
+**Education**  
+BSc (Hons) Computing (Top-Up) · Wrexham University, UK · 2026  
+GDSE · IJSE, Panadura · 2022–2023  
+A/L Maths · Vidyarthna University College, Horana · 2020
+
+<br/>
+
+**Stack I use most** · Java · Spring Boot · Node.js · React · PostgreSQL  
+**Based in** · Bandaragama, Sri Lanka
+
+</div>
 
 ---
-
 ## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,nodejs,express,js,ts,react,html,css,tailwind&perline=10" alt="Languages and app stack" />
+<img src="https://skillicons.dev/icons?i=java,spring,nodejs,express,js,ts,react,html,css,tailwind&perline=10" alt="Languages and app stack" />
 </p>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,docker,kubernetes,aws,nginx,git,github&perline=10" alt="Data and platform" />
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,docker,kubernetes,aws,nginx,git,github&perline=10" alt="Data and platform" />
 </p>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=vite,redux,graphql,maven,postman,vscode,linux,electron,jest&perline=9" alt="Tooling" />
+<img src="https://skillicons.dev/icons?i=vite,redux,graphql,maven,postman,vscode,linux,electron,jest&perline=9" alt="Tooling" />
 </p>
 
 <br/>
 
-<div align="center">
-
-| Layer | Technologies |
-|:-----:|:-------------|
-| **Backend** | Java · Spring Boot · Node.js · Express · REST · Swagger · JWT |
-| **Frontend** | React · TypeScript · JavaScript · Tailwind · Redux · Vite · Electron |
-| **Data** | PostgreSQL · MySQL · MongoDB · Redis |
-| **Platform** | Docker · Kubernetes · AWS · Nginx · Git · Linux |
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Backend-Java_%7C_Spring_Boot_%7C_Node.js_%7C_Express_%7C_REST_%7C_Swagger_%7C_JWT-0e7490?style=for-the-badge&labelColor=0d1117" /><br/><br/>
+  <img src="https://img.shields.io/badge/Frontend-React_%7C_TypeScript_%7C_JavaScript_%7C_Tailwind_%7C_Redux_%7C_Vite_%7C_Electron-5eead4?style=for-the-badge&labelColor=0d1117" /><br/><br/>
+  <img src="https://img.shields.io/badge/Data-PostgreSQL_%7C_MySQL_%7C_MongoDB_%7C_Redis-22d3ee?style=for-the-badge&labelColor=0d1117" /><br/><br/>
+  <img src="https://img.shields.io/badge/Platform-Docker_%7C_Kubernetes_%7C_AWS_%7C_Nginx_%7C_Git_%7C_Linux-a78bfa?style=for-the-badge&labelColor=0d1117" />
+</p>
 
 ---
 
