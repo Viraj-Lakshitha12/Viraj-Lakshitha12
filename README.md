@@ -109,33 +109,20 @@ Core stack: <code>Java</code> · <code>Spring Boot</code> · <code>Node.js</code
 
 ## GitHub Analytics
 
+> Public `github-readme-stats` / trophy / activity-graph Vercel apps are currently **paused (503/402)**.  
+> Streak + contribution snake + 3D graph still work. Stats cards will return when those services are back.
+
 <div align="center">
-  <a href="https://github.com/Viraj-Lakshitha12">
-    <img src="https://github-readme-stats.vercel.app/api?username=Viraj-Lakshitha12&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" height="165" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Viraj-Lakshitha12">
-    <img src="https://streak-stats.demolab.com/?user=Viraj-Lakshitha12&theme=tokyonight&hide_border=true" alt="GitHub streak" height="165" />
-  </a>
+  <img src="https://streak-stats.demolab.com?user=Viraj-Lakshitha12&theme=radical&hide_border=true" alt="GitHub Streak" />
 </div>
 
 <br/>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Viraj-Lakshitha12&layout=compact&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="Top languages" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Viraj-Lakshitha12&theme=tokyonight&no-frame=true&column=7&margin-w=8" alt="Trophies" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Viraj-Lakshitha12&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Activity graph" width="100%" />
-</div>
+<p align="center">
+  <img src="https://img.shields.io/github/followers/Viraj-Lakshitha12?label=Followers&style=for-the-badge&color=0e7490&logo=github" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/Viraj-Lakshitha12?style=for-the-badge&logo=github&color=5eead4" alt="Stars" />
+  <img src="https://img.shields.io/badge/Commits-Active-22d3ee?style=for-the-badge&logo=git&logoColor=white" alt="Commits" />
+</p>
 
 ## Contribution Snake
 
