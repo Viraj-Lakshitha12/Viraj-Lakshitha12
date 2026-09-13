@@ -16,8 +16,10 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: yoshi389111/github-profile-3d-contrib@latest
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -26,7 +28,11 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A .
-          if git commit -m "chore: update 3d contribution graph"; then
-            git push
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
           fi
+          git commit -m "chore: update 3d contribution graph"
+          git pull --rebase origin main
+          git push origin main
