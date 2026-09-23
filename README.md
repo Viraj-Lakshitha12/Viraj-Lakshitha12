@@ -37,8 +37,8 @@
 
 <div align="center">
 
-Full-stack engineer on production web systems at **INTELLEON**.  
-Work covers **APIs**, **databases**, and **React** UIs — with focus on backend design and query performance.
+Software Engineer at **INTELLEON**.  
+Turning complex business requirements into fast, scalable APIs, optimized databases, and polished full-stack experiences.
 
 <br/>
 
