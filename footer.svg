@@ -1,138 +1,104 @@
-<svg viewBox="0 0 960 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="build ship iterate — Viraj Lakshitha">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 250" width="100%" height="100%">
+  <style>
+    .title { font-family: 'Inter', -apple-system, sans-serif; font-size: 34px; font-weight: 800; fill: #ffffff; letter-spacing: 2px; }
+    .subtitle { font-family: 'Fira Code', monospace; font-size: 14px; fill: #00e5ff; letter-spacing: 4px; font-weight: 600; }
+    .tech { font-family: 'Fira Code', monospace; font-size: 13px; fill: #94a3b8; }
+    .pill-text { font-family: 'Fira Code', monospace; font-size: 12px; font-weight: 600; fill: #00e5ff; }
+
+    /* Glowing Animation */
+    .glow-text { animation: glow 2s ease-in-out infinite alternate; }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px rgba(0, 229, 255, 0.2); }
+      to { text-shadow: 0 0 15px rgba(0, 229, 255, 0.8), 0 0 25px rgba(168, 85, 247, 0.6); }
+    }
+
+    /* Terminal blinking cursor */
+    .blink { animation: blinker 1s step-end infinite; }
+    @keyframes blinker { 50% { opacity: 0; } }
+
+    /* Floating Animations for Status Pills */
+    .float1 { animation: float 3s ease-in-out infinite; }
+    .float2 { animation: float 4s ease-in-out infinite reverse; }
+    .float3 { animation: float 3.5s ease-in-out infinite; }
+    .float4 { animation: float 4.5s ease-in-out infinite reverse; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    /* Tech Data Stream */
+    .stream-line { stroke-dasharray: 15, 85; animation: stream 3s linear infinite; }
+    @keyframes stream { to { stroke-dashoffset: -100; } }
+  </style>
+
   <defs>
-    <style>
-      @keyframes drift { from { transform: translate(0,0); } to { transform: translate(28px,28px); } }
-      @keyframes floatA { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-      @keyframes floatB { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-11px); } }
-      @keyframes pulse { 0%,100% { opacity:.1; } 50% { opacity:.22; } }
-      @keyframes dash { to { stroke-dashoffset: -80; } }
-      @keyframes beam { 0%,100% { opacity:.35; } 50% { opacity:.8; } }
-      @keyframes scan { 0% { transform: translateY(-10px); opacity:0; } 12% { opacity:.3; } 88% { opacity:.1; } 100% { transform: translateY(230px); opacity:0; } }
-      .grid { animation: drift 24s linear infinite; }
-      .fa { animation: floatA 4.8s ease-in-out infinite; }
-      .fb { animation: floatB 5.6s ease-in-out infinite -1.2s; }
-      .fc { animation: floatA 6.2s ease-in-out infinite -2s; }
-      .pulse { animation: pulse 5s ease-in-out infinite; }
-      .dash { animation: dash 5s linear infinite; }
-      .beam { animation: beam 3s ease-in-out infinite; }
-      .scan { animation: scan 7s linear infinite; }
-    </style>
-    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
-      <stop offset="0%" stop-color="#0a1f2c"/>
-      <stop offset="55%" stop-color="#061018"/>
-      <stop offset="100%" stop-color="#03070c"/>
-    </radialGradient>
-    <linearGradient id="cubeT" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#5eead4"/>
-      <stop offset="100%" stop-color="#2dd4bf"/>
+    <!-- Dark Gradient Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
-    <linearGradient id="cubeL" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0e7490"/>
-      <stop offset="100%" stop-color="#155e75"/>
+    
+    <!-- Neon Stroke Gradient -->
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#a855f7" />
     </linearGradient>
-    <linearGradient id="cubeR" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#134e4a"/>
-      <stop offset="100%" stop-color="#042f2e"/>
-    </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5eead4" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5eead4" stop-opacity=".6"/>
-      <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="vigB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="40%" stop-color="#03070c" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#03070c" stop-opacity="1"/>
-    </linearGradient>
-    <linearGradient id="vigT" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#03070c" stop-opacity=".85"/>
-      <stop offset="40%" stop-color="#03070c" stop-opacity="0"/>
-    </linearGradient>
-    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#5eead4" stroke-width=".22" stroke-opacity=".12"/>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.6" opacity="0.4"/>
     </pattern>
   </defs>
 
-  <rect width="960" height="220" fill="url(#bg)"/>
-  <g class="grid" opacity=".85">
-    <rect x="-32" y="-32" width="1024" height="284" fill="url(#g)"/>
+  <!-- Background & Grid -->
+  <rect width="850" height="250" rx="12" fill="url(#bg)" stroke="#1e293b" stroke-width="1"/>
+  <rect width="100%" height="100%" fill="url(#grid)" rx="12" />
+
+  <!-- Animated Circuit/Stream Lines -->
+  <g opacity="0.8">
+    <path d="M 0 45 L 200 45 L 250 75 L 850 75" fill="none" stroke="#1e293b" stroke-width="2" />
+    <path d="M 0 45 L 200 45 L 250 75 L 850 75" fill="none" stroke="url(#neon)" stroke-width="2" class="stream-line" />
+
+    <path d="M 850 205 L 650 205 L 600 175 L 0 175" fill="none" stroke="#1e293b" stroke-width="2" />
+    <path d="M 850 205 L 650 205 L 600 175 L 0 175" fill="none" stroke="url(#neon)" stroke-width="2" class="stream-line" />
   </g>
 
-  <ellipse class="pulse" cx="200" cy="110" rx="120" ry="70" fill="#0e7490"/>
-  <ellipse class="pulse" cx="760" cy="100" rx="110" ry="65" fill="#5eead4" style="animation-delay:-2s"/>
+  <!-- Code Bracket Decorations in Background -->
+  <text x="60" y="145" fill="#1e293b" font-size="80" font-family="monospace" font-weight="bold" opacity="0.7">{</text>
+  <text x="750" y="145" fill="#1e293b" font-size="80" font-family="monospace" font-weight="bold" opacity="0.7">}</text>
 
-  <!-- circuit -->
-  <g fill="none" stroke="#5eead4" stroke-opacity=".3" stroke-width="1" stroke-dasharray="5 8" class="dash">
-    <path d="M0 160 H70 V120 H130"/>
-    <path d="M960 60 H890 V100 H830"/>
-    <path d="M0 190 H90"/>
-    <path d="M960 190 H870"/>
-  </g>
-  <g fill="#5eead4">
-    <circle cx="70" cy="160" r="2.2" opacity=".5"/>
-    <circle cx="130" cy="120" r="2.2" opacity=".5"/>
-    <circle cx="890" cy="60" r="2.2" opacity=".5"/>
-    <circle cx="830" cy="100" r="2.2" opacity=".5"/>
-  </g>
+  <!-- Main Content Area -->
+  <g text-anchor="middle">
+    <!-- Subtitle (Code Tag Style) -->
+    <text x="425" y="70" class="subtitle">&lt; FULL STACK ENGINEERING /&gt;</text>
 
-  <!-- cubes -->
-  <g class="fa">
-    <polygon points="90,70 120,52 150,70 120,88" fill="url(#cubeT)" opacity=".75"/>
-    <polygon points="90,70 120,88 120,118 90,100" fill="url(#cubeL)" opacity=".8"/>
-    <polygon points="120,88 150,70 150,100 120,118" fill="url(#cubeR)" opacity=".82"/>
-  </g>
-  <g class="fb">
-    <polygon points="800,55 835,35 870,55 835,75" fill="url(#cubeT)" opacity=".72"/>
-    <polygon points="800,55 835,75 835,110 800,90" fill="url(#cubeL)" opacity=".78"/>
-    <polygon points="835,75 870,55 870,90 835,110" fill="url(#cubeR)" opacity=".8"/>
-  </g>
-  <g class="fc">
-    <polygon points="200,145 222,132 244,145 222,158" fill="url(#cubeT)" opacity=".55"/>
-    <polygon points="200,145 222,158 222,182 200,169" fill="url(#cubeL)" opacity=".6"/>
-    <polygon points="222,158 244,145 244,169 222,182" fill="url(#cubeR)" opacity=".62"/>
-  </g>
-  <g class="fa" style="animation-delay:-1s">
-    <polygon points="720,140 740,128 760,140 740,152" fill="url(#cubeT)" opacity=".48"/>
-    <polygon points="720,140 740,152 740,172 720,160" fill="url(#cubeL)" opacity=".52"/>
-    <polygon points="740,152 760,140 760,160 740,172" fill="url(#cubeR)" opacity=".54"/>
+    <!-- Main Title with Blinking Cursor -->
+    <text x="425" y="125" class="title glow-text">CRAFTING DIGITAL EXPERIENCES<tspan class="blink" fill="#00e5ff">_</tspan></text>
+
+    <!-- Tech Stack -->
+    <text x="425" y="165" class="tech">Java • Spring Boot • Node.js • React • PostgreSQL • Docker</text>
   </g>
 
-  <!-- center beam -->
-  <rect x="180" y="108" width="600" height="1.4" fill="url(#line)" class="beam"/>
-
-  <!-- scan -->
-  <rect class="scan" x="0" y="0" width="960" height="1.6" fill="#5eead4" opacity=".3"/>
-
-  <rect width="960" height="220" fill="url(#vigB)"/>
-  <rect width="960" height="220" fill="url(#vigT)"/>
-
-  <!-- text -->
-  <text x="480" y="78" text-anchor="middle"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="11" fill="#5eead4" letter-spacing="5" opacity=".9">
-    FULL STACK · PRODUCTION · 2026
-  </text>
-
-  <text x="480" y="118" text-anchor="middle"
-        font-family="Georgia, 'Times New Roman', serif"
-        font-size="32" fill="#f1f5f9" font-weight="700" letter-spacing="-0.5">
-    build · ship · iterate
-  </text>
-
-  <text x="480" y="148" text-anchor="middle"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="12" fill="#94a3b8" letter-spacing="1.2">
-    Java · Spring · Node · React · PostgreSQL · Redis · Docker
-  </text>
-
-  <!-- chips -->
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10">
-    <rect x="280" y="170" width="70" height="22" rx="11" fill="#0e7490" opacity=".4" stroke="#5eead4" stroke-opacity=".35"/>
-    <text x="315" y="185" text-anchor="middle" fill="#99f6e4">APIs</text>
-    <rect x="360" y="170" width="80" height="22" rx="11" fill="#0e7490" opacity=".4" stroke="#5eead4" stroke-opacity=".35"/>
-    <text x="400" y="185" text-anchor="middle" fill="#99f6e4">Queries</text>
-    <rect x="450" y="170" width="70" height="22" rx="11" fill="#0e7490" opacity=".4" stroke="#5eead4" stroke-opacity=".35"/>
-    <text x="485" y="185" text-anchor="middle" fill="#99f6e4">Cloud</text>
-    <rect x="530" y="170" width="80" height="22" rx="11" fill="#0e7490" opacity=".4" stroke="#5eead4" stroke-opacity=".35"/>
-    <text x="570" y="185" text-anchor="middle" fill="#99f6e4">Ship it</text>
+  <!-- Terminal/System Status Buttons (Square design for dev look) -->
+  <g transform="translate(160, 195)" class="float1">
+    <rect width="115" height="28" rx="4" fill="#020617" stroke="#3b82f6" stroke-width="1" />
+    <text x="57.5" y="19" text-anchor="middle" class="pill-text" fill="#3b82f6">[ GET /apis ]</text>
   </g>
+
+  <g transform="translate(295, 195)" class="float2">
+    <rect width="130" height="28" rx="4" fill="#020617" stroke="#a855f7" stroke-width="1" />
+    <text x="65" y="19" text-anchor="middle" class="pill-text" fill="#a855f7">DB: Connected</text>
+  </g>
+
+  <g transform="translate(445, 195)" class="float3">
+    <rect width="110" height="28" rx="4" fill="#020617" stroke="#00e5ff" stroke-width="1" />
+    <text x="55" y="19" text-anchor="middle" class="pill-text" fill="#00e5ff">Status: 200</text>
+  </g>
+
+  <g transform="translate(575, 195)" class="float4">
+    <rect width="120" height="28" rx="4" fill="#020617" stroke="#3b82f6" stroke-width="1" />
+    <text x="60" y="19" text-anchor="middle" class="pill-text" fill="#3b82f6">Sys.Online()</text>
+  </g>
+
 </svg>
