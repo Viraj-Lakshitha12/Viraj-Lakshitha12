@@ -1,104 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 250" width="100%" height="100%">
   <style>
     .title { font-family: 'Inter', -apple-system, sans-serif; font-size: 34px; font-weight: 800; fill: #ffffff; letter-spacing: 2px; }
-    .subtitle { font-family: 'Fira Code', monospace; font-size: 14px; fill: #00e5ff; letter-spacing: 4px; font-weight: 600; }
-    .tech { font-family: 'Fira Code', monospace; font-size: 13px; fill: #94a3b8; }
-    .pill-text { font-family: 'Fira Code', monospace; font-size: 12px; font-weight: 600; fill: #00e5ff; }
-
-    /* Glowing Animation */
-    .glow-text { animation: glow 2s ease-in-out infinite alternate; }
-    @keyframes glow {
-      from { text-shadow: 0 0 5px rgba(0, 229, 255, 0.2); }
-      to { text-shadow: 0 0 15px rgba(0, 229, 255, 0.8), 0 0 25px rgba(168, 85, 247, 0.6); }
+    .subtitle { font-family: 'Fira Code', monospace; font-size: 13px; fill: #38bdf8; letter-spacing: 5px; font-weight: 600; }
+    .tech { font-family: 'Fira Code', monospace; font-size: 13px; fill: #94a3b8; letter-spacing: 1.5px; }
+    
+    /* Clean text soft glow */
+    .glow-text { filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.25)); }
+    
+    /* Smooth scanning light animation that stays far away from text */
+    .scan-line {
+      stroke-dasharray: 100 300;
+      animation: scan 6s linear infinite;
     }
-
-    /* Terminal blinking cursor */
-    .blink { animation: blinker 1s step-end infinite; }
-    @keyframes blinker { 50% { opacity: 0; } }
-
-    /* Floating Animations for Status Pills */
-    .float1 { animation: float 3s ease-in-out infinite; }
-    .float2 { animation: float 4s ease-in-out infinite reverse; }
-    .float3 { animation: float 3.5s ease-in-out infinite; }
-    .float4 { animation: float 4.5s ease-in-out infinite reverse; }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
+    @keyframes scan {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: -400; }
     }
-
-    /* Tech Data Stream */
-    .stream-line { stroke-dasharray: 15, 85; animation: stream 3s linear infinite; }
-    @keyframes stream { to { stroke-dashoffset: -100; } }
   </style>
 
   <defs>
-    <!-- Dark Gradient Background -->
+    <!-- Premium Dark Gradient -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050505" />
+      <stop offset="0%" stop-color="#030712" />
       <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     
-    <!-- Neon Stroke Gradient -->
-    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00e5ff" />
-      <stop offset="50%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#a855f7" />
-    </linearGradient>
-
-    <!-- Tech Grid Pattern -->
+    <!-- Subtle Grid Pattern -->
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.6" opacity="0.4"/>
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.4" opacity="0.4"/>
     </pattern>
+    
+    <!-- Neon Gradient for Scanning Lines -->
+    <linearGradient id="neon-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0" />
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="1" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </linearGradient>
   </defs>
 
-  <!-- Background & Grid -->
-  <rect width="850" height="250" rx="12" fill="url(#bg)" stroke="#1e293b" stroke-width="1"/>
+  <!-- Background Layer -->
+  <rect width="850" height="250" rx="12" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5"/>
   <rect width="100%" height="100%" fill="url(#grid)" rx="12" />
 
-  <!-- Animated Circuit/Stream Lines -->
-  <g opacity="0.8">
-    <path d="M 0 45 L 200 45 L 250 75 L 850 75" fill="none" stroke="#1e293b" stroke-width="2" />
-    <path d="M 0 45 L 200 45 L 250 75 L 850 75" fill="none" stroke="url(#neon)" stroke-width="2" class="stream-line" />
-
-    <path d="M 850 205 L 650 205 L 600 175 L 0 175" fill="none" stroke="#1e293b" stroke-width="2" />
-    <path d="M 850 205 L 650 205 L 600 175 L 0 175" fill="none" stroke="url(#neon)" stroke-width="2" class="stream-line" />
+  <!-- Safe Animated Borders (Completely away from text center) -->
+  <g>
+    <!-- Top Border Safe Line -->
+    <line x1="40" y1="35" x2="810" y2="35" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="40" y1="35" x2="810" y2="35" stroke="url(#neon-glow)" stroke-width="2.5" class="scan-line"/>
+    
+    <!-- Bottom Border Safe Line -->
+    <line x1="40" y1="215" x2="810" y2="215" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="40" y1="215" x2="810" y2="215" stroke="url(#neon-glow)" stroke-width="2.5" class="scan-line"/>
   </g>
 
-  <!-- Code Bracket Decorations in Background -->
-  <text x="60" y="145" fill="#1e293b" font-size="80" font-family="monospace" font-weight="bold" opacity="0.7">{</text>
-  <text x="750" y="145" fill="#1e293b" font-size="80" font-family="monospace" font-weight="bold" opacity="0.7">}</text>
-
-  <!-- Main Content Area -->
+  <!-- Central Clean Content Layout (100% Clear from animations) -->
   <g text-anchor="middle">
-    <!-- Subtitle (Code Tag Style) -->
-    <text x="425" y="70" class="subtitle">&lt; FULL STACK ENGINEERING /&gt;</text>
+    
+    <!-- Subtitle -->
+    <text x="425" y="90" class="subtitle">&lt; FULL STACK ENGINEERING &gt;</text>
+    
+    <!-- Main Title -->
+    <text x="425" y="140" class="title glow-text">CRAFTING DIGITAL EXPERIENCES</text>
+    
+    <!-- Tech Stack Line -->
+    <text x="425" y="180" class="tech">Java • Spring Boot • Node.js • React • PostgreSQL • Docker</text>
 
-    <!-- Main Title with Blinking Cursor -->
-    <text x="425" y="125" class="title glow-text">CRAFTING DIGITAL EXPERIENCES<tspan class="blink" fill="#00e5ff">_</tspan></text>
-
-    <!-- Tech Stack -->
-    <text x="425" y="165" class="tech">Java • Spring Boot • Node.js • React • PostgreSQL • Docker</text>
   </g>
-
-  <!-- Terminal/System Status Buttons (Square design for dev look) -->
-  <g transform="translate(160, 195)" class="float1">
-    <rect width="115" height="28" rx="4" fill="#020617" stroke="#3b82f6" stroke-width="1" />
-    <text x="57.5" y="19" text-anchor="middle" class="pill-text" fill="#3b82f6">[ GET /apis ]</text>
-  </g>
-
-  <g transform="translate(295, 195)" class="float2">
-    <rect width="130" height="28" rx="4" fill="#020617" stroke="#a855f7" stroke-width="1" />
-    <text x="65" y="19" text-anchor="middle" class="pill-text" fill="#a855f7">DB: Connected</text>
-  </g>
-
-  <g transform="translate(445, 195)" class="float3">
-    <rect width="110" height="28" rx="4" fill="#020617" stroke="#00e5ff" stroke-width="1" />
-    <text x="55" y="19" text-anchor="middle" class="pill-text" fill="#00e5ff">Status: 200</text>
-  </g>
-
-  <g transform="translate(575, 195)" class="float4">
-    <rect width="120" height="28" rx="4" fill="#020617" stroke="#3b82f6" stroke-width="1" />
-    <text x="60" y="19" text-anchor="middle" class="pill-text" fill="#3b82f6">Sys.Online()</text>
-  </g>
-
 </svg>
