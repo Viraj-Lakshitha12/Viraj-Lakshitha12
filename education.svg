@@ -1,95 +1,188 @@
-<svg viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Education path 2020–2026">
-  <defs>
-    <style>
-      @keyframes pulse { 0%,100% { opacity:.3; } 50% { opacity:.85; } }
-      @keyframes grow { 0% { stroke-dashoffset: 700; } 100% { stroke-dashoffset: 0; } }
-      @keyframes fadeUp { 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
-      @keyframes scan { 0% { transform: translateY(-8px); opacity:0; } 15% { opacity:.25; } 85% { opacity:.08; } 100% { transform: translateY(330px); opacity:0; } }
-      .line { stroke-dasharray: 700; animation: grow 2.4s ease-out forwards; }
-      .n1 { animation: pulse 2.6s ease-in-out infinite; }
-      .n2 { animation: pulse 2.6s ease-in-out infinite .4s; }
-      .n3 { animation: pulse 2.6s ease-in-out infinite .8s; }
-      .c1 { animation: fadeUp .7s ease-out .2s both; }
-      .c2 { animation: fadeUp .7s ease-out .45s both; }
-      .c3 { animation: fadeUp .7s ease-out .7s both; }
-      .scan { animation: scan 8s linear infinite; }
-    </style>
-    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
-      <stop offset="0%" stop-color="#0a1f2c"/>
-      <stop offset="55%" stop-color="#061018"/>
-      <stop offset="100%" stop-color="#03070c"/>
-    </radialGradient>
-    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0e7490"/>
-      <stop offset="50%" stop-color="#5eead4"/>
-      <stop offset="100%" stop-color="#22d3ee"/>
-    </linearGradient>
-    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0a1220"/>
-    </linearGradient>
-    <pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#5eead4" stroke-width=".2" stroke-opacity=".08"/>
-    </pattern>
-  </defs>
+<svg viewBox="0 0 900 310" xmlns="http://www.w3.org/2000/svg" width="100%" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpiZjY3ODliNy1mZWRhLTQ5ZmMtYTIzYy03NWI5MjNhNDQzZTIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaG4Vj2cF0f+2ba+T/Rk6faMAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmYmMyNzQ1Zi1kYjk3LTQzN2QtYmU4NS04YTJlMmJkZjYyMWRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoXp9joLrlf7dB89R37ThPQwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggC+CCCV9YCzmv5mNUCRsIkH0oeF0iTGJH9+1GGlNY5wSkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaOV+0canE0xC76eBaIDjTHcAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCBmq9D7ie7OJAjKh5PoVUr1BA1RP54I8cK7wOvza56y2WRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiKZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmJmNjc4OWI3LWZlZGEtNDlmYy1hMjNjLTc1YjkyM2E0NDNlMi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmUyZTNjNDNjLTIyMzgtNDlmMS1iNmE2LTJhMjY2YWZhYzg3ZXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAL4IIJX1gLOa/mY1QJGwiQfSh4XSJMYkf37UYaU1jnBKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggUhc6FOm6JmffV+Bch15Yvv73nOdq8sH48/qIu1iDmEyiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggxljOM891RjQadpFTUgDovlFOQYxgF0TnMuwBpyWQrtZ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQB4vCfIo0vi2hjerZPJLPvHErtIYqRB2C6PfS8TOY2f3IopuTp/3qXkAen8PiJmeRkKndB6TmXXKInOFP6B4Lbg=</c2pa:manifest></metadata>
+<defs>
+<style>
+@keyframes glow{0%,100%{opacity:.08}50%{opacity:.18}}
+@keyframes tw  {0%,100%{opacity:.15}50%{opacity:.55}}
+@keyframes pg  {0%,100%{opacity:.35}50%{opacity:.85}}
+@keyframes drw {from{stroke-dashoffset:532}to{stroke-dashoffset:0}}
+.gl{animation:glow 7s ease-in-out infinite}
+.g2{animation:glow 9s ease-in-out infinite -4s}
+.t1{animation:tw  3.2s ease-in-out infinite}
+.t2{animation:tw  4.5s ease-in-out infinite -1.5s}
+.t3{animation:tw  2.9s ease-in-out infinite -.7s}
+.p1{animation:pg  2.2s ease-in-out infinite}
+.p2{animation:pg  2.8s ease-in-out infinite -.8s}
+.p3{animation:pg  3.4s ease-in-out infinite -1.5s}
+.ln{stroke-dasharray:532;animation:drw 2.4s ease-out forwards}
+</style>
+<radialGradient id="a1" cx="25%" cy="55%" r="45%">
+  <stop offset="0%" stop-color="#5eead4" stop-opacity="1"/><stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="a2" cx="75%" cy="45%" r="42%">
+  <stop offset="0%" stop-color="#a78bfa" stop-opacity="1"/><stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="a3" cx="50%" cy="80%" r="35%">
+  <stop offset="0%" stop-color="#22d3ee" stop-opacity="1"/><stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="c1g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#0c2030"/><stop offset="100%" stop-color="#060e18"/>
+</linearGradient>
+<linearGradient id="c2g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#0c1430"/><stop offset="100%" stop-color="#060818"/>
+</linearGradient>
+<linearGradient id="c3g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#16062e"/><stop offset="100%" stop-color="#0a0418"/>
+</linearGradient>
+<linearGradient id="hg" x1="270" y1="0" x2="630" y2="0" gradientUnits="userSpaceOnUse">
+  <stop offset="0%"   stop-color="#5eead4"/>
+  <stop offset="50%"  stop-color="#f1f5f9"/>
+  <stop offset="100%" stop-color="#a78bfa"/>
+</linearGradient>
+<linearGradient id="ft" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%"  stop-color="#0d1117" stop-opacity="1"/>
+  <stop offset="40%" stop-color="#0d1117" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="fb" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="74%" stop-color="#0d1117" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+</linearGradient>
+<pattern id="dt" width="24" height="24" patternUnits="userSpaceOnUse">
+  <circle cx="12" cy="12" r=".45" fill="#5eead4" fill-opacity=".09"/>
+</pattern>
+</defs>
 
-  <rect width="960" height="320" rx="18" fill="url(#bg)"/>
-  <rect width="960" height="320" rx="18" fill="url(#g)" opacity=".9"/>
-  <rect width="960" height="320" rx="18" fill="none" stroke="#5eead4" stroke-opacity=".14"/>
+<!-- BASE -->
+<rect width="900" height="310" fill="#060810"/>
+<rect width="900" height="310" fill="url(#dt)"/>
+<rect width="900" height="310" fill="url(#a1)" class="gl"/>
+<rect width="900" height="310" fill="url(#a2)" class="g2"/>
+<rect width="900" height="310" fill="url(#a3)" class="gl"/>
 
-  <rect class="scan" x="0" y="0" width="960" height="1.5" fill="#5eead4" opacity=".25"/>
+<!-- Stars -->
+<g fill="#fff">
+  <circle cx="72"  cy="22" r="1.1" class="t1"/><circle cx="240" cy="14" r="1.0" class="t2"/>
+  <circle cx="660" cy="18" r="1.1" class="t3"/><circle cx="828" cy="26" r="1.0" class="t1"/>
+  <circle cx="450" cy="294" r="1.0" class="t2"/><circle cx="120" cy="290" r=".9" class="t3"/>
+  <circle cx="780" cy="292" r=".9" class="t1"/>
+</g>
 
-  <!-- header -->
-  <text x="480" y="36" text-anchor="middle"
-        font-family="ui-monospace, Menlo, Consolas, monospace"
-        font-size="11" fill="#5eead4" letter-spacing="4">EDUCATION PATH · 2020 → 2026</text>
-  <text x="480" y="58" text-anchor="middle"
-        font-family="ui-monospace, Menlo, Consolas, monospace"
-        font-size="10" fill="#64748b" letter-spacing="1.5">Maths stream · Software engineering · Computing top-up</text>
+<!-- HEADER -->
+<text x="450" y="40" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#484f58" letter-spacing="4">
+  EDUCATION PATH  ·  2020 → 2026
+</text>
+<text x="450" y="66" text-anchor="middle"
+  font-family="Georgia,'Times New Roman',serif" font-size="28" font-weight="700" letter-spacing="1" fill="url(#hg)">
+  ACADEMIC JOURNEY
+</text>
+<text x="450" y="84" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#64748b" letter-spacing="1.5">
+  Maths stream  ·  Software engineering  ·  Computing top-up
+</text>
+<line x1="210" y1="94" x2="690" y2="94" stroke="#5eead4" stroke-width=".5" stroke-opacity=".20"/>
 
-  <!-- timeline -->
-  <line x1="120" y1="118" x2="840" y2="118" stroke="#1e293b" stroke-width="3"/>
-  <line class="line" x1="120" y1="118" x2="840" y2="118" stroke="url(#track)" stroke-width="3" stroke-linecap="round"/>
+<!-- ═══ TIMELINE LINE ═══ -->
+<!-- Card layout: width=240, gap=25, margin=65 -->
+<!-- Centers: x=185, x=450, x=715 -->
 
-  <!-- STEP 1: A/L -->
-  <g class="c1">
-    <circle class="n1" cx="200" cy="118" r="16" fill="#0e7490" opacity=".22"/>
-    <circle cx="200" cy="118" r="9" fill="#0e7490" stroke="#5eead4" stroke-width="2"/>
-    <text x="200" y="92" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#5eead4" letter-spacing="1">01</text>
+<!-- Base dim line -->
+<line x1="185" y1="140" x2="715" y2="140"
+  stroke="#5eead4" stroke-width="1.5" stroke-opacity=".15"/>
+<!-- Animated draw-in -->
+<line x1="185" y1="140" x2="715" y2="140"
+  stroke="#5eead4" stroke-width="2" stroke-opacity=".55" class="ln"/>
 
-    <rect x="95" y="150" width="210" height="130" rx="12" fill="url(#card)" stroke="#5eead4" stroke-opacity=".2"/>
-    <text x="200" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f1f5f9" font-weight="700">G.C.E. Advanced Level</text>
-    <text x="200" y="200" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#5eead4">Maths Stream</text>
-    <text x="200" y="222" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Vidyarthna University</text>
-    <text x="200" y="238" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">College · Horana</text>
-    <text x="200" y="262" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#22d3ee">2020</text>
-  </g>
+<!-- ═══ NODE 1 (x=185) — teal ═══ -->
+<circle cx="185" cy="140" fill="none" stroke="#5eead4" stroke-width=".9">
+  <animate attributeName="r" values="12;26" dur="3s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".65;0" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="185" cy="140" fill="none" stroke="#5eead4" stroke-width=".9">
+  <animate attributeName="r" values="12;26" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".65;0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="185" cy="140" r="16" fill="#5eead4" fill-opacity=".10" class="p1"/>
+<circle cx="185" cy="140" r="11" fill="#0a1e28" stroke="#5eead4" stroke-width="1.8"/>
+<text x="185" y="144" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" font-weight="700" fill="#5eead4">01</text>
 
-  <!-- STEP 2: GDSE -->
-  <g class="c2">
-    <circle class="n2" cx="480" cy="118" r="16" fill="#5eead4" opacity=".18"/>
-    <circle cx="480" cy="118" r="9" fill="#134e4a" stroke="#5eead4" stroke-width="2"/>
-    <text x="480" y="92" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#5eead4" letter-spacing="1">02</text>
+<!-- CARD 1  x=65 w=240 -->
+<rect x="65" y="162" width="240" height="120" rx="10" fill="url(#c1g)"/>
+<rect x="65" y="162" width="240" height="120" rx="10" fill="none" stroke="#5eead4" stroke-width=".8" stroke-opacity=".40"/>
+<rect x="67" y="164" width="236" height="3" rx="1.5" fill="#5eead4" fill-opacity=".50"/>
+<text x="185" y="190" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="10.5" font-weight="700" fill="#f1f5f9">G.C.E. Advanced Level</text>
+<text x="185" y="206" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#5eead4">Maths Stream</text>
+<line x1="90" y1="213" x2="280" y2="213" stroke="#5eead4" stroke-width=".4" stroke-opacity=".25"/>
+<text x="185" y="228" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" fill="#64748b">Vidyarthna University College</text>
+<text x="185" y="242" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" fill="#64748b">Horana</text>
+<text x="185" y="266" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="12" font-weight="700" fill="#5eead4">2020</text>
 
-    <rect x="375" y="150" width="210" height="130" rx="12" fill="url(#card)" stroke="#5eead4" stroke-opacity=".2"/>
-    <text x="480" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f1f5f9" font-weight="700">GDSE</text>
-    <text x="480" y="200" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#5eead4">Software Engineering</text>
-    <text x="480" y="222" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Institute of Software</text>
-    <text x="480" y="238" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Engineering · Panadura</text>
-    <text x="480" y="262" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#22d3ee">2022 — 2023</text>
-  </g>
+<!-- ═══ NODE 2 (x=450) — cyan ═══ -->
+<circle cx="450" cy="140" fill="none" stroke="#22d3ee" stroke-width=".9">
+  <animate attributeName="r" values="12;26" dur="3s" begin=".7s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".65;0" dur="3s" begin=".7s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="140" fill="none" stroke="#22d3ee" stroke-width=".9">
+  <animate attributeName="r" values="12;26" dur="3s" begin="2.2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".65;0" dur="3s" begin="2.2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="140" r="16" fill="#22d3ee" fill-opacity=".10" class="p2"/>
+<circle cx="450" cy="140" r="11" fill="#051820" stroke="#22d3ee" stroke-width="1.8"/>
+<text x="450" y="144" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" font-weight="700" fill="#22d3ee">02</text>
 
-  <!-- STEP 3: BSc -->
-  <g class="c3">
-    <circle class="n3" cx="760" cy="118" r="16" fill="#22d3ee" opacity=".16"/>
-    <circle cx="760" cy="118" r="9" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
-    <text x="760" y="92" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#22d3ee" letter-spacing="1">03</text>
+<!-- CARD 2  x=330 w=240 -->
+<rect x="330" y="162" width="240" height="120" rx="10" fill="url(#c2g)"/>
+<rect x="330" y="162" width="240" height="120" rx="10" fill="none" stroke="#22d3ee" stroke-width=".8" stroke-opacity=".40"/>
+<rect x="332" y="164" width="236" height="3" rx="1.5" fill="#22d3ee" fill-opacity=".50"/>
+<text x="450" y="190" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="10.5" font-weight="700" fill="#f1f5f9">Graduate Diploma (GDSE)</text>
+<text x="450" y="206" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#22d3ee">Software Engineering</text>
+<line x1="355" y1="213" x2="545" y2="213" stroke="#22d3ee" stroke-width=".4" stroke-opacity=".25"/>
+<text x="450" y="228" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" fill="#64748b">Institute of Software Engineering</text>
+<text x="450" y="242" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" fill="#64748b">IJSE · Panadura</text>
+<text x="450" y="266" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="12" font-weight="700" fill="#22d3ee">2022 – 2023</text>
 
-    <rect x="655" y="150" width="210" height="130" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity=".25"/>
-    <text x="760" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f1f5f9" font-weight="700">BSc (Hons) Computing</text>
-    <text x="760" y="200" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#5eead4">Top-Up Degree</text>
-    <text x="760" y="222" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Wrexham University, UK</text>
-    <text x="760" y="238" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#94a3b8">Londontec City Campus</text>
-    <text x="760" y="262" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#22d3ee">2026</text>
-  </g>
+<!-- ═══ NODE 3 (x=715) — purple ═══ -->
+<circle cx="715" cy="140" fill="none" stroke="#a78bfa" stroke-width=".9">
+  <animate attributeName="r" values="12;26" dur="3s" begin="1.4s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".65;0" dur="3s" begin="1.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="715" cy="140" fill="none" stroke="#a78bfa" stroke-width=".9">
+  <animate attributeName="r" values="12;26" dur="3s" begin="2.9s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".65;0" dur="3s" begin="2.9s" repeatCount="indefinite"/>
+</circle>
+<circle cx="715" cy="140" r="16" fill="#a78bfa" fill-opacity=".10" class="p3"/>
+<circle cx="715" cy="140" r="11" fill="#100520" stroke="#a78bfa" stroke-width="1.8"/>
+<text x="715" y="144" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" font-weight="700" fill="#a78bfa">03</text>
+
+<!-- CARD 3  x=595 w=240 -->
+<rect x="595" y="162" width="240" height="120" rx="10" fill="url(#c3g)"/>
+<rect x="595" y="162" width="240" height="120" rx="10" fill="none" stroke="#a78bfa" stroke-width=".8" stroke-opacity=".40"/>
+<rect x="597" y="164" width="236" height="3" rx="1.5" fill="#a78bfa" fill-opacity=".50"/>
+<text x="715" y="190" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="10.5" font-weight="700" fill="#f1f5f9">BSc (Hons) Computing</text>
+<text x="715" y="206" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#a78bfa">Top-Up Degree</text>
+<line x1="620" y1="213" x2="810" y2="213" stroke="#a78bfa" stroke-width=".4" stroke-opacity=".25"/>
+<text x="715" y="228" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" fill="#64748b">Wrexham University, UK</text>
+<text x="715" y="242" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="9" fill="#64748b">Londontec City Campus</text>
+<text x="715" y="266" text-anchor="middle"
+  font-family="'Courier New',Courier,monospace" font-size="12" font-weight="700" fill="#a78bfa">2026</text>
+
+<!-- FADES -->
+<rect width="900" height="40" fill="url(#ft)"/>
+<rect x="0" y="270" width="900" height="40" fill="url(#fb)"/>
 </svg>
